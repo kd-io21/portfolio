@@ -6,39 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kimberly Diaz • Web Developer</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="images/profile_pic.png" rel="shortcut icon" />
 </head>
 <body>
-    <div class="nav-bar">
-        <h5>kimberly diaz <span>.</span></h5>
-        <div>
-            <a href="#">RESUME</a>
-            <a href="#">PORTFOLIO</a>
-            <a href="#">ABOUT</a>
-            <a href="#">CONTACT</a>
-        </div>
-    </div>
-
-    <div class="intro">
-        <div>
-            <h1>Hi 👋 I'm Kimberly Diaz</h1>
-            <p>Aspiring web developer with skills in UI/UX design, looking to create better user-friendly websites. Currently living in Sharjah, UAE looking for the right internship.</p>
-            <button>Check out my work</button>
-        </div>
-        <img src="images/profile_pic.png" alt="Profile Picture">
-    </div>
-    <h6>MY RECENT PROJECT</h6>
-    <div class="projects">
-        <div class="project">
-            <img src="images/minisize_img.png" alt="Image Banner">
+    <div class="container">
+        <div class="nav-bar">
+            <h3>kimberly diaz<span>.</span></h3>
             <div>
-                <h4>Minisize</h4>
-                <p>A unique e-commerce website selling travel sized beauty products commercially-viable for the market.</p>
-                <div class="tag">Group Project</div>
-                <div class="role">UI Designer, Data Entry, Full-Stack Developer</div>
-                <a>Check out website</a>
-                <!-- <button>View Case Study</button> -->
+                <a href="#">RESUME</a>
+                <a href="#">PORTFOLIO</a>
+                <a href="#">ABOUT</a>
+                <a href="#contact">CONTACT</a>
             </div>
         </div>
+    
+        <div class="intro">
+            <div>
+                <h1>Hi 👋 I'm Kimberly Diaz</h1>
+                <p>Aspiring web developer with skills in UI/UX design, looking to create better user-friendly websites. Currently living in Sharjah, UAE looking for the right internship.</p>
+                <a href="#project">Check out my projects</a>
+            </div>
+            <div class="img_container"><img src="images/profile_pic.png" alt="Profile Picture"></div>
+        </div>
+    
+        <h6 id="project">MY RECENT PROJECT</h6>
+        <div class="projects">
+            <div class="project">
+                <div class="img_container"><img src="images/minisize_img.png" alt="Image Banner" /></div>
+                <div>
+                    <h2>Minisize</h2>
+                    <p>A unique e-commerce website selling travel sized beauty products commercially-viable for the market.</p>
+                    <div class="tag">Group Project</div>
+                    <div class="role">UI Designer, Data Entry, Full-Stack Developer</div>
+                    <a href="http://minisize.42web.io/" target="_blank">Check out website</a>
+                </div>
+            </div>
+            <div class="project">
+                <div>
+                    <h2>SocioSweet</h2>
+                    <p>Designing a social media clone for females that suits their needs & aesthetic.</p>
+                    <div class="tag">Individual Project</div>
+                    <div class="role">UI Designer, Full-Stack Developer</div>
+                    <a href="http://socio-sweet.42web.io/" target="_blank">Check out website</a>
+                </div>
+                <div class="img_container"><img src="images/sociosweet_img.png" alt="Image Banner" /></div>
+            </div>
+            <div class="project">
+                <div class="img_container"><img src="images/dezato_img.png" alt="Image Banner" /></div>
+                <div>
+                    <h2>Dezato</h2>
+                    <p>A single-page multi-device website themed on showcasing Japanese sweets.</p>
+                    <div class="tag">Individual Project</div>
+                    <div class="role">UI Designer, Front-end Developer</div>
+                    <a href="projects/Dezato/index.html" target="_blank">Check out website</a>
+                </div>
+            </div>
+            <div class="project">
+                <div>
+                    <h2>Fate's Choices</h2>
+                    <p>A non-linear hypertext website where the user's choice determines the ending.</p>
+                    <div class="tag">Individual Project</div>
+                    <div class="role">UI Designer, Front-end Developer</div>
+                    <a href="projects/Fate's Choices/html/index.html" target="_blank">Check out website</a>
+                </div>
+                <div class="img_container"><img src="images/fate_img.png" alt="Image Banner" /></div>
+            </div>
+        </div>
+    
+        <footer id="contact">
+            <a href="mailto:kimberly.jeweldiaz@gmail.com" target="_blank">kimberly.jeweldiaz@gmail.com</a><span>•</span><h2>  050 673 1618</h2>
+            <p>Contact me for interships, junior positions or freelance work 🙌.</p>
+    
+            <div class="social">
+                <img src="" alt="LinkedIn">
+                <img src="" alt="Instagram">
+                <img src="" alt="Dribbble">
+            </div>
+        </footer>
     </div>
 </body>
 </html>
