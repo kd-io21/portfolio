@@ -386,6 +386,9 @@ footer .social i {
   a {
     font-size: 16px;
   }
+  footer a {
+    font-size: 25px;
+  }
   .intro {
     display: block;
   }
@@ -460,8 +463,14 @@ footer .social i {
   .nav-bar a:not(:first-child) {
     display: none;
   }
-  .intro {
-    width: 90%;
+  .intro div:first-child {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 410px) {
+  footer a {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

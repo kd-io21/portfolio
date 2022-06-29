@@ -300,6 +300,7 @@ footer {
     h6 { font-size: 18px; }
     p { font-size: 20px; }
     a { font-size: 16px; }
+    footer a { font-size: 25px; }
 
     .intro {
         display: block;
@@ -367,6 +368,12 @@ footer {
     }
 
     .intro {
-        width: 90%;
+        div:first-child {
+            width: 100%;
+        }
     }
+}
+
+@include breakpoint(0px, 410px) {
+    footer a {font-size: 20px; }
 }
