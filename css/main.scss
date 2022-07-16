@@ -241,6 +241,21 @@ h6 {
             }
             
         }
+
+        #project_link {
+            margin-top: 2rem;
+
+            a {
+                display: inline;
+                border-bottom: none;
+
+                &:before {
+                    content: '';
+                    background: none;
+                    position: absolute;
+                }
+            }
+        }
     }
 
     @include breakpoint(0px, 1220px) {
@@ -382,3 +397,4 @@ footer {
 @include breakpoint(0px, 410px) {
     footer a {font-size: 20px; }
 }
+

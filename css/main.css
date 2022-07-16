@@ -302,6 +302,21 @@ h6 {
           transform: scale(1.05);
 }
 
+.projects .project #project_link {
+  margin-top: 2rem;
+}
+
+.projects .project #project_link a {
+  display: inline;
+  border-bottom: none;
+}
+
+.projects .project #project_link a:before {
+  content: '';
+  background: none;
+  position: absolute;
+}
+
 @media screen and (min-width: 0px) and (max-width: 1220px) {
   .projects h2 {
     font-size: 24px;
