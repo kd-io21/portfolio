@@ -302,15 +302,10 @@ h6 {
           transform: scale(1.05);
 }
 
-.projects .project #project_link {
-  border: 1px solid red;
-}
-
 .projects .project #project_link a {
   padding: 1.5rem 1.5rem 1.5rem 0;
   margin: 0;
   border-bottom: none;
-  border: 1px solid blue;
 }
 
 .projects .project #project_link a:before {
