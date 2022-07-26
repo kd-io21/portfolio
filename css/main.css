@@ -3,6 +3,8 @@
   font-family: 'Work Sans', sans-serif;
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5 {
@@ -217,6 +219,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /* Fading animation */
 }
 
 .projects .project > div {
@@ -285,7 +288,7 @@ h6 {
 }
 
 .projects .project .img_container {
-  width: 50%;
+  width: 100%;
   -webkit-filter: drop-shadow(0px 30px 60px rgba(61, 61, 61, 0.15));
           filter: drop-shadow(0px 30px 60px rgba(61, 61, 61, 0.15));
 }
@@ -300,6 +303,43 @@ h6 {
 .projects .project .img_container img:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.projects .project .mySlides {
+  display: none;
+}
+
+.projects .project img {
+  vertical-align: middle;
+}
+
+.projects .project .active {
+  background-color: #717171;
+}
+
+.projects .project .fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .8;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .projects .project #project_link a {
@@ -468,6 +508,11 @@ footer .social i {
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
+  .projects .project #project_link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
   .projects .reverse {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
