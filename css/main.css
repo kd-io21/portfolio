@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5 {
   font-family: 'Playfair Display', serif;
 }
 
+i {
+  text-rendering: optimizeLegibility;
+}
+
 html {
   width: 100%;
 }
@@ -288,7 +292,7 @@ h6 {
 }
 
 .projects .project .img_container {
-  width: 100%;
+  width: 45%;
   -webkit-filter: drop-shadow(0px 30px 60px rgba(61, 61, 61, 0.15));
           filter: drop-shadow(0px 30px 60px rgba(61, 61, 61, 0.15));
 }
