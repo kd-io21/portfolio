@@ -84,6 +84,7 @@ a { font-size: 16px; }
     padding: 5px 0;
     position: relative;
     border-bottom: 2px solid black;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
