@@ -276,18 +276,18 @@ h6 {
         }
 
         #project_link {
-            // a {
-            //     padding: 1.5rem 1.5rem 1.5rem 0;
-            //     margin: 0;
-            //     border-bottom: none;
+            a {
+                padding: 1.5rem 1.5rem 1.5rem 0;
+                margin: 0;
+                border-bottom: none;
                 
 
-            //     &:before {
-            //         content: '';
-            //         background: none;
-            //         position: absolute;
-            //     }
-            // }
+                &:before {
+                    content: '';
+                    background: none;
+                    position: absolute;
+                }
+            }
         }
     }
 
