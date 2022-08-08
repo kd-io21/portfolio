@@ -11,10 +11,6 @@ h1, h2, h3, h4, h5 {
   font-family: 'Playfair Display', serif;
 }
 
-a {
-  border: 1px solid #F7B12C;
-}
-
 i {
   text-rendering: optimizeLegibility;
 }
@@ -88,7 +84,7 @@ a {
   font-size: 16px;
 }
 
-.nav-bar a, .intro a, .projects a, footer > a {
+.nav-bar a, .intro a, .text > a, footer > a {
   color: black;
   text-decoration: none;
   background-image: -webkit-gradient(linear, left top, right top, from(#F7B12C), color-stop(50%, #F7B12C), color-stop(50%, #000));
@@ -106,7 +102,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-.nav-bar a:before, .intro a:before, .projects a:before, footer > a:before {
+.nav-bar a:before, .intro a:before, .text > a:before, footer > a:before {
   content: '';
   background: #F7B12C;
   display: block;
@@ -119,13 +115,29 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-.nav-bar a:hover, .intro a:hover, .projects a:hover, footer > a:hover {
+.nav-bar a:hover, .intro a:hover, .text > a:hover, footer > a:hover {
   background-position: 0;
   cursor: pointer;
 }
 
-.nav-bar a:hover::before, .intro a:hover::before, .projects a:hover::before, footer > a:hover::before {
+.nav-bar a:hover::before, .intro a:hover::before, .text > a:hover::before, footer > a:hover::before {
   width: 100%;
+}
+
+.social {
+  margin: 25px 80px 0 0;
+}
+
+.social a {
+  color: #000;
+}
+
+.social a:hover {
+  color: #F7B12C;
+}
+
+.social i {
+  margin-right: 5px;
 }
 
 .nav-bar {
@@ -351,16 +363,8 @@ h6 {
   }
 }
 
-.projects .project #project_link a {
-  padding: 1.5rem 1.5rem 1.5rem 0;
-  margin: 0;
-  border-bottom: none;
-}
-
-.projects .project #project_link a:before {
-  content: '';
-  background: none;
-  position: absolute;
+.projects .project .social i {
+  margin-right: 15px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 1220px) {
@@ -394,22 +398,6 @@ footer p {
   margin-top: 8px;
   color: #949494;
   font-size: 16px;
-}
-
-footer .social {
-  margin: 25px 80px 0 0;
-}
-
-footer .social a {
-  color: #000;
-}
-
-footer .social a:hover {
-  color: #F7B12C;
-}
-
-footer .social i {
-  margin-right: 5px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 1060px) {
